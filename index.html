@@ -18,7 +18,23 @@
 	<!-- RSS -->
 	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
 
-
+    <style>
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        a { 
+            text-decoration: underline;
+            font-weight: normal;
+        }
+        h4 {
+            color: #777;
+            font-size: 120%;
+            margin-bottom: 10px;
+        }
+hr{display:block; height: 1px; border:0; border-top: 1px solid #aaa; }
+    </style>
 </head>
 
 
@@ -32,17 +48,6 @@
 
 		<!-- Nav pages -->
 	  
-	    
-	  
-	    
-	  
-	    
-	  
-	    
-	  
-	    
-	  
-	    
 	  
     
     <!-- Nav links -->
@@ -78,24 +83,13 @@
     <span class="f-left">
       <a href="/">
         <h1>
-          <span>Andrew Collette</span>
+          <span>Andrew Collette<span style="color: #ccc"> Ph.D.</span></span>
         </h1>
       </a>
     </span>
     <span id="nav-links" class="absolute right bottom">
       <!-- Nav pages -->
 	    
-	      
-	    
-	      
-	    
-	      
-	    
-	      
-	    
-	      
-	    
-	      
 	    
 
       <!-- Nav links -->
@@ -116,27 +110,88 @@
 		<main>
 
 			<p>
-Physicist and software wrangler at <a href="http://enthought.com">Enthought</a>,
-in Austin Texas. </p><p>These days I manage a variety of projects at Enthought.
-I write less code than I used to, but am still an enthusiastic
-<a href="http://python.org">Python</a> evangelist.
+                <img style="width:25%;float:right;margin:15px" src="ac.jpg">
+Lapsed physicist and former startup founder, currently Vice President of Product Engineering at <a href="http://enthought.com">Enthought</a>
+in Austin Texas. </p><p>These days I manage a variety of projects at Enthought, 
+but I am still an enthusiastic
+Python evangelist.
+
 </p>
 
-<table style="width:100%"><tr>
-<td style="width: 25%; text-align: center;"><a href="http://www.h5py.org/"><img style="display:inline" src="img/h5py.jpg"></a></td>
-<td style="width: 25%; text-align: center;"><a href="http://www.amazon.com/Python-HDF5-Andrew-Collette/dp/1449367836"><img style="display:inline" src="img/cat.gif"></a></td>
-<td style="width: 25%; text-align: center;"><a href="http://advancedplotting.github.io"><img style="display:inline" src="img/plotting.png"></a></td>
-<td style="width: 25%; text-align: center;"><a href="https://support.hdfgroup.org/projects/compass/"><img style="display:inline" src="img/hdfcompass.png"></a></td>
-</tr></table>
+
 
 <p>
-In addition to my physics career, previous software work includes HDF5 for
-Python, an O'Reilly book on storing scientific data,
-the Python-powered Advanced Plotting Toolkit for LabVIEW,
-and the HDF Compass extensible data visualization tool.
+Other software-related work includes the open-source
+project <a href="http://www.h5py.org/" target="_blank">HDF5 for
+Python</a>, an <a href="http://www.amazon.com/Python-HDF5-Andrew-Collette/dp/1449367836" target="_blank">O'Reilly book</a> on storing scientific data,
+and the Python-powered <a href="http://advancedplotting.github.io" target="_blank">Advanced Plotting Toolkit</a> for LabVIEW.  The Advanced 
+Plotting Toolkit was the flagship
+product of my startup, Heliosphere Research.
 </p>
+<p>
+Before that, I got my doctorate in Physics at UCLA, in 2010.  My dissertation
+was on the physics of expanding laser-produced plasmas, conducted at the
+<a href="https://plasma.physics.ucla.edu" target="_blank">Basic Plasma Science Facility</a> (a major DOE-funded center for basic plasma
+science).
+</p>
+<p>
+After graduating,
+I was a
+postdoctoral researcher and later research scientist at the University of
+Colorado's Laboratory for Atmospheric and Space Physics (LASP).  As part of that
+work I took a major role in constructing the 
+<a href="https://impact.colorado.edu/facilities.html" target="_blank">3MV hypervelocity dust accelerator</a>
+at the IMPACT facility.
+</p>
+<div class="clearfix"></div>
+
+<h3>Recent Work</h3>
+
+<hr>
+<h4>Enthought Edge</h4>
 
 
+<div style="width: 49%; float: left">
+<p>
+As Enthought Platform Director and later VP Product Engineering, I led the implementation
+of
+<a href="https://www.enthought.com/edge/">Edge</a>, our cloud-native
+platform for scientists.</p>
+<p>
+Edge is a Kubernetes-native service built using a variety of tools, everything from 
+Python to Terraform and specialized React front-end components.  It interfaces
+with Amazon Web Services, to allow science apps to run on dynamically provisioned
+EC2 machines.
+</p>
+<p>
+Edge was created to put scientists and engineers back in the driver's seat when
+it comes to R&D. Despite advancements in artificial intelligence and cloud computing,
+R&D scientists still have trouble unlocking the full potential of their institutional knowledge. 
+Edge provides the tools needed to tackle hard science problems while still
+enabling proper corporate governance and cost control.
+</p>
+<p>For more information on Enthought Edge, check out our <a href="https://www.enthought.com/edge/">
+product page</a> or the <a href="https://docs.enthought.com">official documentation</a>.
+</p>
+</div>
+
+<div style="width: 49%; float: right">
+<a href="https://www.enthought.com/edge/" target="_blank"><img src="edge4.png"></a>
+<a href="edgescreen.png" target="_blank"><img src="edgescreen.png"></a>
+</div>
+
+<div class="clearfix"></div>
+
+
+<hr>
+<h3 style="margin-top: 20px">Other Projects</h3>
+
+
+<table style="width:100%"><tr>
+<td style="width: 33%; text-align: center;"><a href="http://www.h5py.org/"><img style="display:inline" src="img/h5py.jpg">HDF5 for Python</a><br/><br/></td>
+<td style="width: 33%; text-align: center;"><a href="http://www.amazon.com/Python-HDF5-Andrew-Collette/dp/1449367836"><img style="display:inline" src="img/cat.gif">O'Reilly book<br/><i>Unlocking Scientific Data</i></a></td>
+<td style="width: 33%; text-align: center;"><a href="http://advancedplotting.github.io"><img style="display:inline" src="img/plotting.png">Former startup product <i>Advanced Plotting Toolkit</i></a></td>
+</tr></table>
 
 
 <!-- Posts -->
